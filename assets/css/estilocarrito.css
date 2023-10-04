@@ -1,0 +1,155 @@
+.signupFrm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+form {
+    width: 380px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgb(199, 154, 86);
+    background-color: #86300e;
+}
+
+.title {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(0, 89, 255);
+}
+
+.inputContainer {
+    position: relative;
+    height: 45px;
+    width: 100%;
+    margin-bottom: 17px;
+}
+
+.input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #c2c2c2;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+    color: rgb(255, 174, 0);
+}
+
+::placeholder {
+    color: transparent;
+}
+
+.label {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(250, 146, 49);
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.submitBtn {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    ;
+    color: rgb(0, 89, 255);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.submitBtn:hover {
+    background-color: rgb(0, 89, 255);
+    color:white;
+    transform: translateY(-2px);
+    border-color: rgb(0, 89, 255);
+}
+
+.input:focus+.label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(199, 154, 86);
+    ;
+}
+
+.input:focus {
+    border: 2px solid #be9240;
+}
+
+.input:not(:placeholder-shown)+.label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+body {
+    background-color: #888181;
+}
+
+#Contproduct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+}
+
+#buttonFinalizar {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 89, 255);
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-family: Arial, Helvetica, sans-serif ;
+    border-color: rgb(0, 89, 255);
+   
+}
+
+#buttonVaciar {
+    font-size: 25px;
+    background-color: rgb(0, 89, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-family: Arial, Helvetica, sans-serif ;
+    border-color: rgb(0, 89, 255);
+}
+
+#buttonVaciar:hover{
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 89, 255);
+    transform: translateY(-2spx);
+   
+
+}
+
+#buttonFinalizar:hover{
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 89, 255);
+    transform: translateY(-2spx);
+   
+
+}
